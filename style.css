@@ -8,14 +8,14 @@
 
 body {
     background-color: #f5f5f5;
-    color: #333;
+    color: #13001a;
     line-height: 1,6;
 
 }
 
 a {
     text-decoration: none;
-    color: #085949
+    color: #42002c
 }
 
 .profile-img{
@@ -29,9 +29,78 @@ a {
 }
 
 header {
-    background: linear-gradient(135deg, #16f2c7, #085949);
+    background: linear-gradient(135deg, #bb007d, #42002c);
     color:white;
     text-align: center;
     padding: 2rem 0;
     position: relative;
+}
+
+.header-content h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem; 
+} 
+.header-content p { 
+    font-size: 1.2rem; 
+    opacity: 0.9;
+} 
+/* Navegação */
+
+nav { 
+    background-color: #42002c; 
+    padding: 1rem 0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100;
+} 
+nav ul { 
+    display: flex; 
+    justify-content: center; 
+    list-style: none;
+} 
+nav ul li { 
+    margin: 0 1.5rem;
+}
+
+nav ul li a { 
+    color: white; 
+    font-weight: 500; 
+    transition: color 0.3s;
+} 
+nav ul li a:hover { 
+    color: #bb007d; 
+} 
+/* Seções */
+section { 
+    padding: 3rem 10%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
+section h2 { 
+    text-align: center; 
+    margin-bottom: 2rem; 
+    font-size: 2rem; 
+    color: #42002c; 
+    position: relative; 
+}
+
+section h2::after { 
+    content: ' ';
+    display: block; 
+    width: 80px; 
+    height: 4px; 
+    background: #bb007d; 
+    margin: 0.5rem auto; 
+    border-radius: 2px; 
+} 
+/* Sobre mim */
+about-content { 
+    display: flex; 
+    align-items: center; 
+    gap: 2rem; 
+    flex-wrap: wrap;
+} 
+.about-text { 
+    flex: 1; 
+    min-width: 300px;
 }
